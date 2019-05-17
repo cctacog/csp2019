@@ -8,34 +8,27 @@
      #main-header{
        text-align:center;
        color:white;
-       padding:8px;
-       
-     
+       padding:3px;
      }
      .button:link, a:visited {
-       background-color:rgb(150, 0, 0);
+       background-color: #E74BE7;
        color:white;
-       padding: 20px 30px;
-       text-align:center;
+       padding: 12px 22px;
        text-decoration:none;
        display:inline-block;
-       font-size:18px;
+       font-size:15px;
        cursor:pointer;
        outline:none;
        border:none;
-       border-radius:25px;
-       transition-duration:.5s;
-      
+       border-radius:100%;
+       box-shadow:0 8px #999;
      }
      .button:active {
-       background-color:rgb(145, 0, 0);
-     
+       background-color:#CA1CCA;
+       box-shadow:0 3px #666;
+       transform:translateY(4px);
      }
-     .button:hover {
-         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-         background-color:rgb(120, 0, 0);
-
-     }
+     .button:hover {background-color:#CA1CCA;}
      img {
        border-radius: 100%;
        display:block;
@@ -45,30 +38,11 @@
      p {
          color:#F2F2F2;
          font-size:25px;
-         text-align:center;
      }
      h3{
          color:white;
          font-size:40px;
-         background-color:rgb(150, 0, 0);
-         text-align:center;
      }
-     .mybotton:link a:visited{
-        background:url("images/homeicon.jpg") no-repeat;
-        height:60px;
-        border-radius:25px;
-        border:none;
-        margin-left:auto;
-        margin-right:auto;
-        cursor:pointer;
-        transition-duration:.5s;
-     }
-     
-     .mybotton:hover {
-         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-         
-     } 
-    
    </style>
 </body>
   </head>
@@ -76,11 +50,11 @@
   <header id="main-header">
     <h1>Home Page</h1>
   </header>
-<a class= "mybotton" href="index.html"></a>
+<a href="index.html"><img src="images/homeicon.jpg" align= left height= 50px border-radius= 25%></a>
 <a class="button" href="portfolio.html">Portfolio</a>
 <a class="button" href="about_me.html">About me!</a>
 <br>
-<h3 >Welcome!</h3>
+<h3>Welcome!</h3>
 <img src="images/homeicon.jpg" height="246">
 </body>
 </html>
@@ -88,7 +62,7 @@
 <head>
 </head>
 <body>
-<p>On this website is information, computer projects and more by <strong>Sophia Garcia</strong> ;).</p>
+<p font-size= >On this website is information, computer projects and more by <strong>Sophia Garcia</strong> ;).</p>
 </body>
 <style>
 body, html {
