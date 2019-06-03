@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Home page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <body background= "images/smooth.png">
    <style type="text/css">
      #main-header{
@@ -32,13 +33,20 @@
      }
      .button:active {
        background-color:rgb(145, 0, 0);
-     
+       box-shadow:0 3px #666;
+       transform:translateY(4px);
+       text-align:center;
      }
      .button:hover {
          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
          background-color:rgb(120, 0, 0);
-
      }
+     
+     .disabled {
+         opacity: 0.7;
+         cursor: not-allowed;
+     }
+     
      img {
        border-radius: 100%;
        display:block;
@@ -56,22 +64,7 @@
          background-color:rgb(150, 0, 0);
          text-align:center;
      }
-     .mybotton:link a:visited{
-        background:url("images/homeicon.jpg") no-repeat;
-        height:60px;
-        border-radius:25px;
-        border:none;
-        margin-left:auto;
-        margin-right:auto;
-        cursor:pointer;
-        transition-duration:.5s;
-     }
      
-     .mybotton:hover {
-         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-         
-     } 
-    
    </style>
 </body>
   </head>
@@ -79,8 +72,9 @@
   <header id="main-header">
     <h1>Home Page</h1>
   </header>
+<center><a class="button disabled" href="index.html"><i class="fa fa-home"></i> Casa</a>
 <a class="button" href="portfolio.html">Portfolio</a>
-<a class="button" href="about_me.html">About me!</a>
+<a class="button" href="about_me.html">About me!</a></center>
 <br>
 <h3 >Welcome!</h3>
 <img src="images/homeicon.jpg" height="246">
